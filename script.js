@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('fixed');
     }
 });
-}
+
 
 window.reveal = ScrollReveal({reset:true})
 
@@ -61,3 +61,4 @@ reveal.reveal('.efeito-atrasoenviar', {
     distance: '120px',
     delay: 2000
 })
+}
