@@ -97,7 +97,7 @@ p {
 
 .logo img {
     width: 280px;
-    height: 120px;
+    height: 127px;
     object-fit: cover;
     transition: all 1s linear;
 }
@@ -121,6 +121,7 @@ p {
 .fixed:hover {
     opacity: 1;
     transition: opacity 0.3s ease;
+    transition: widht 1s linear, height 1s linear;
 }
 
 /* COMEÇO INICIO */
