@@ -1,95 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RDelboni</title>
+    <meta name="description" content="Portfólio de Rafael Massuco.">
+    <meta name="author" content="Rafael Delboni Massuco">
 
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagem/bitmap.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagem/logo.ico" type="image/x-icon">
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    
+    <title>RMassuco</title>
 </head>
+
 <body>
-    <section class="header">
-        <div class="header-content">
-            <div class="logo" >
-                <img src="imagem/RDelboni.png" alt="Logo">
-            </div>
-            <div class="header-links">
+
+    <header class="header">
+        <nav>
+            <img src="imagem/dev.png" alt="">
+            <button class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#projeto">PROJETOS</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
+                    <li><a href="#home" id="menu-home" class="hover-animation">INÍCIO</a></li>
+                    <li><a href="#sobre" id="menu-sobre" class="hover-animation">SOBRE MIM</a></li>
+                    <li><a href="#projetos" id="menu-projetos" class="hover-animation">PROJETOS</a></li>
+                    <li><a href="#contato" id="menu-contato" class="hover-animation">CONTATO</a></li>
                 </ul>
             </div>
-        </div>
-    </section>
-    <section class="inicio" id="inicio">
-        <div class="inicio-content efeito-inicio">
-            <div class="inicio-titulo">
-                <h1>Olá meu nome<br>é <span>Rafael</span> Delboni</h1><br>
-                <p>E sou um Desenvolvedor <br>Front-End Web</p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="ancora" id="home"></div>
+        <section class="home">
+            <div class="home-texto efeito1">
+                <h1>Olá, meu nome é<br><span>Rafael </span>Delboni Massuco</h1>
+                <p>E sou um Desenvolvedor Front-End.</p>
             </div>
-            <div class="inicio-imagem efeito-img">
-                <img src="imagem/0cf424ff-8154-4b79-9ca1-15c0ac51c546.jpg" alt="">
+            <div class="home-img efeito2">
+                <img src="imagem/homeimg.jpg" alt="">
             </div>
-        </div>
-        
-    </section>
-    <section class="sobre " id="sobre">
-        <div class="sobre-content efeito-sobre">
-            <div class="sobre-imagem efeito-img">
-                <img src="imagem/image (2).jpeg" alt="">
+        </section>
+
+        <div class="ancora" id="sobre"></div>
+        <section class="sobre">
+            <div class="sobre-img efeito1">
+                <img src="imagem/sobreimg.jpeg" alt="">
             </div>
-            <div class="sobre-titulo">
-                <div class="sobre-titulo-content">
-                    <h1 class="titulo">Sobre mim</h1>
-                    <p>Sou um desenvolvedor ansioso na busca de novos <span>conhecimentos</span> e <span>aprendizados</span> voltados para a programação <span>front-end</span> para me tornar cada vez melhor na área. Tenho estudados tecnologias como HTML, CSS e JavaScript.</p>
+            <div class="sobre-content">
+                <div class="sobre-texto efeito2">
+                    <h2>SOBRE MIM</h2>
+                    <p>Tenho <span id="idade"></span> anos e sou um estudante de Análise e Desenvolvimento de Sistemas (ADS). Estou ansioso na busca por novos <span>conhecimentos</span> e <span>aprendizados</span> voltados para programação front-end, visando me tornar um <span>profissional</span> cada vez melhor na área. Tenho estudado tecnologias como HTML, CSS, JavaScript.</p>
                 </div>
-                <div class="techs">
-                    <img src="imagem/317755_badge_html_html5_achievement_award_icon.png" alt="" class="tech efeito-atraso1">
-                    <img src="imagem/317756_badge_css_css3_achievement_award_icon.png" alt="" class="tech efeito-atraso2">
-                    <img src="imagem/icons8-javascript-512.png" alt="" class="tech efeito-atraso3">
+                <div class="sobre-links">
+                    <a href="https://github.com/RafaelMassuco" class="link-container efeito-link1" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="link-item-git">
+                            <img src="imagem/github.svg" alt="GitHub" class="link-logo">
+                            <p>GITHUB</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafael-massuco/" class="link-container efeito-link2"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="link-item-in">
+                            <img src="imagem/linkedin.svg" alt="LinkedIn" class="link-logo">
+                            <p>LINKEDIN</p>
+                        </div>
+                    </a>
+
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="projeto " id="projeto">
-        <div class="projeto-content efeito-projeto">
-            <h1 class="titulo">Projetos</h1>
-            <div class="projetos">
+        </section>
+
+        <div class="ancora" id="projetos"></div>
+        <section class="projetos">
+            <h2 class="efeito1">PROJETOS</h2>
+            <div class="projetos-content efeito-proj">
                 <div class="proj">
-                    <div class="imagem efeito-atraso1">
-                        <img src="imagem/embreve.png" alt="">
+                    <img src="imagem/coffee.png" alt="" class="fundo">
+                    <div class="proj-content">
+                        <h3>Café Aroma</h3>
+                        <div class="proj-texto">
+                            Primeiro projeto (pessoal) feito com HTML e CSS após iniciar estudos em front-end.
+                        </div>
+                        <div class="proj-button">
+                            <a href="https://rafaelmassuco.github.io/CafeAroma/" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="button-site">
+                                    <p>Ver site</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/RafaelMassuco/CafeAroma" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="button-git">
+                                    <p>Código</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="proj">
-                    <div class="imagem efeito-atraso2">
-                        <img src="imagem/embreve.png" alt="">
+                    <img src="imagem/embreve.png" alt="">
+                    <div class="proj-content">
+                        <h3>TÍTULO</h3>
+                        <div class="proj-texto">
+                            Este projeto está em fase de planejamento e em breve será iniciado. Fique atento para
+                            atualizações futuras.
+                        </div>
+                        <div class="proj-button">
+                            <a href="#">
+                                <div class="button-site">
+                                    <p>EM BREVE</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="button-git">
+                                    <p>EM BREVE</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="proj">
-                    <div class="imagem efeito-atraso3">
-                        <img src="imagem/embreve.png" alt="">
+                    <img src="imagem/embreve.png" alt="">
+                    <div class="proj-content">
+                        <h3>TÍTULO</h3>
+                        <div class="proj-texto">
+                            Estamos trabalhando em novas ideias para este projeto. Detalhes serão revelados em breve.
+                        </div>
+                        <div class="proj-button">
+                            <a href="#">
+                                <div class="button-site">
+                                    <p>EM BREVE</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="button-git">
+                                    <p>EM BREVE</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+        </section>
+
+        <div class="ancora" id="contato"></div>
+        <section class="contato efeito-contato">
+            <h2 class="efeito1">CONTATO</h2>
+            <div class="contato-content">
+                <div class="git-in efeito2">
+                    <div class="git">
+                        <a href="https://github.com/RafaelMassuco" target="_blank" rel="noopener noreferrer">
+                            <img class="gitimg1" src="imagem/github.svg" alt="">
+                            <img class="gitimg2" src="imagem/githubtxt.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/rafael-massuco/" target="_blank" rel="noopener noreferrer">
+                            <img src="imagem/linkedin-contato.svg" alt="" width="300" height="70">
+                        </a>
+                    </div>
+                </div>
+                <div class="contato-ou efeito3">
+                    <h3>OU</h3>
+                </div>
+                <div class="whatsapp efeito4">
+                    <h3>Envie-me uma mensagem</h3>
+                    <a href="https://wa.me/5519994421248" target="_blank" rel="noopener noreferrer">
+                        <img src="imagem/whatsapp.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="contato" id="contato">
-        <div class="contato-content efeito-contato">
-            <h1 class="titulo">Fale comigo</h1>
-            <form action="" class="contato-form efeito-atrasoform">
-                <input class="efeito-atrasoform1" type="text" name="texto" id="texto" placeholder="Seu nome completo:">
-                <input class="efeito-atrasoform2" type="email" name="email" id="email" placeholder="Seu e-mail:">
-                <input class="efeito-atrasoform3" type="tel" name="celular" id="celular" placeholder="Seu celular:">
-                <textarea name="mensagem" class="efeito-atrasoform4" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-                <input class="efeito-atrasoenviar" type="submit" value="ENVIAR" id="enviar">
-            </form>
-        </div>
-    </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafael Delboni Massuco. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
+
 </html>
